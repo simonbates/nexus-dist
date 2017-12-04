@@ -1,0 +1,10 @@
+{
+    "name": "gpii-nexus-dist",
+    "version": "0.1.0",
+    "author": "GPII",
+    "license": "BSD-3-Clause",
+    "dependencies": {
+        "fluid-authoring": "amb26/fluid-authoring#7b3dc7701e0e57f9760ff7a29002e16942ec2a27"
+    },
+    "private": true
+}
