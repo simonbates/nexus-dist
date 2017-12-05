@@ -4,7 +4,10 @@
     "author": "GPII",
     "license": "BSD-3-Clause",
     "dependencies": {
-        "fluid-authoring": "amb26/fluid-authoring#7b3dc7701e0e57f9760ff7a29002e16942ec2a27"
+        "fluid-authoring": "amb26/fluid-authoring#7b3dc7701e0e57f9760ff7a29002e16942ec2a27",
+        "gpii-co-occurrence-engine": "simonbates/co-occurrence-engine#ce52ec5c1287871b8b8df57648bfb1ce925859b2",
+        "infusion": "3.0.0-dev.20170221T200310Z.095ff9f",
+        "kettle": "1.4.0"
     },
     "private": true
 }
