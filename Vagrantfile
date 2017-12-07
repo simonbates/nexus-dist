@@ -17,9 +17,18 @@ Vagrant.configure("2") do |config|
     vb.memory = "512"
   end
 
+  config.vm.provision "shell", inline: <<-SHELL
+    yum -y install docker-latest
+    systemctl stop docker
+    systemctl disable docker
+    systemctl enable docker-latest
+    systemctl start docker-latest
+    grep -qF "DOCKERBINARY" /etc/sysconfig/docker || echo "DOCKERBINARY=/usr/bin/docker-latest" >> /etc/sysconfig/docker
+  SHELL
+
   config.vm.provision "shell", run: "always", inline: <<-SHELL
     cd /vagrant
-    ./scripts/docker.sh
+    ./scripts/vagrant-docker.sh
   SHELL
 
 end
