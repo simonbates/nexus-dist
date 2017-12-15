@@ -1,0 +1,22 @@
+{
+    "name": "gpii-nexus-dist",
+    "version": "0.1.0",
+    "author": "GPII",
+    "license": "BSD-3-Clause",
+    "scripts": {
+        "start": "node VisibleNexusWithCoOccurrenceEngine.js"
+    },
+    "dependencies": {
+        "fluid-authoring": "amb26/fluid-authoring#7b3dc7701e0e57f9760ff7a29002e16942ec2a27",
+        "gpii-co-occurrence-engine": "simonbates/co-occurrence-engine#ce52ec5c1287871b8b8df57648bfb1ce925859b2",
+        "infusion": "3.0.0-dev.20170221T200310Z.095ff9f",
+        "kettle": "1.4.0"
+    },
+    "devDependencies": {
+        "eslint-config-fluid": "1.2.0",
+        "fluid-grunt-eslint": "18.1.2",
+        "grunt": "1.0.1",
+        "grunt-jsonlint": "1.1.0"
+    },
+    "private": true
+}

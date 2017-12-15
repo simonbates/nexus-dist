@@ -1,0 +1,18 @@
+{
+    "type": "fluid.visible.nexus.co-occurrence.config",
+    "options": {
+        "components": {
+            "server": {
+                "type": "kettle.server",
+                "options": {
+                    "components": {
+                        "authoring": {
+                            "type": "fluid.authoring.nexus.app"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "mergeConfigs": "%gpii-co-occurrence-engine/configs/gpii.nexusWithCoOccurrenceEngine.config.json"
+}
